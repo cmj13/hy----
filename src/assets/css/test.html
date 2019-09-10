@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<script type="text/javascript">
+  function setRuleContent(){
+    var selectValue = $('#experIdt option:selected').text();
+    var arr = selectValue.replace(/士/g,function*(i){
+      return i + "  ";
+      console.log(arr.length);
+      console.log(arr);
+      console.log(typeof arr);
+      document.getElementsByID('experIdt').value =arr;
+    })
+  }l
+</script>
+<body>
+<input type="text" id="experIdt" name="experIdt" maxlength="11" class="form-control acvs-v-notnull" onchange="setRuleContent1()"/>
+<select multiple="multiple" id="experId" name="experId" maxlength="11" class="form-control acvs-v-notnull" onchange="setRuleContent()">
+        <option value="php">马博士</option>  
+        <option value="asp">马博士</option>  
+        <option value="jsp">马博士</option>  
+</select>
+
+</body>
+</html>
+

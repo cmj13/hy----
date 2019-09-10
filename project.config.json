@@ -1,0 +1,38 @@
+{
+	"lib": "jquery",
+	"devServer": {
+		
+		"host": "localhost",
+		"port": 8080,
+		"publicPath": "/"
+	},
+	"pages": [
+		{
+			"entry": {
+				"app": "./src/app.js"
+			},
+			"template": "./index.html"
+		},
+		{
+			"entry": {
+				"streamerApp": "./src/streamerApp.js"
+			},
+			"template": "./streamer.html"
+		},
+
+		{
+			"entry": {
+				"dj": "./src/dj.js"
+			},
+			"template": "./dj.html"
+		},
+
+		{
+			"entry": {
+				"hero": "./src/hero.js"
+			},
+			"template": "./hero.html"
+		}
+		
+	]
+}

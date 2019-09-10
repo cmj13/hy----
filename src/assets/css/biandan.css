@@ -1,0 +1,138 @@
+
+		*:focus{
+			outline:none; /* Prevents blue border in Webkit */
+		}
+
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background-image: url(../imgs/pc-bg.jpg);
+		}
+		
+		#top_bit {
+			width:760px;
+			margin: 0 auto;
+		}
+		
+		form {
+			width:300px;
+			margin: 20px auto;
+		}
+		.form{
+			color: yellow;
+			margin-left: 30px;
+			margin-top: 50px;
+		}
+		p {
+			line-height: 1.6;
+		}
+
+		input, textarea {
+			font-family:"STCaiyun", sans-serif;
+			background-color:#fff;
+			border:1px solid #ccc;
+			font-size:20px;
+			width:300px;
+			min-height:30px;
+			display:block;
+			margin-bottom:16px;
+			margin-top:8px;		
+			word-break:break-all;	
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;			
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+		}
+		
+		textarea {
+				min-height:200px;
+		}
+
+		input:focus, textarea:focus {
+			-webkit-box-shadow:0 0 25px #ccc;
+			-moz-box-shadow:0 0 25px #ccc;
+			box-shadow:0 0 25px #ccc;
+			
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			transform: scale(1.05);
+		}
+		
+		/* The interesting bit */
+		
+		input:not(:focus), textarea:not(:focus) {
+			opacity:0.6;
+		}
+		
+		input[type=submit] {
+			padding:10px;
+			background:none;
+			opacity:1.0;
+		}
+		.btn{
+			background-color:#BCD2EE;
+			width: 50%;
+			height: 30px;
+			font-family:"STCaiyun";
+			text-align: center;
+			margin-right: 80px;
+			border-radius: 10px;
+			margin-left: 85px;
+			border :0px;
+
+		}
+		.f-des{
+			font-family: "Helvetica Neue";
+			font-size:13px;
+			color: yellow;
+		}
+		.des-1{
+			width: 120px;
+			height: 40px;
+			float: left;
+			margin-right:20px;
+		}
+		.des-2{
+			width:120px;
+			height: 40px;
+			float: right;
+			margin-right: 40px;
+		}
+		.ins-1{
+			width: 120px;
+			height: 40px;
+			margin-right:20px;
+		}
+	.Ins-amount1{
+		width: 50px;
+		height: 50px;
+		border-radius:50px;
+		float: right;
+		color: green;
+		margin-top: -60px;
+		margin-right: 80px;
+		text-align: center;
+/*         background:rgba(0,0,0,0.8) none repeat scroll !important;*/
+
+	}
+		.Ins-amount2{
+		width: 50px;
+		height:50px;
+		border-radius: 50px;
+		float: right;
+		color: red;
+		margin-top: -60px;
+		margin-right: 80px;
+		text-align: center;
+	}
+		.Ins-amount3{
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		float: right;
+		color: blue;
+		margin-top: -60px;
+		margin-right: 80px;
+		text-align: center;
+	}
